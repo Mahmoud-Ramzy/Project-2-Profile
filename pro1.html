@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my first project with html and css." >
+    <link rel="stylesheet" href="/code/Master.css">
+    <title>Project1</title>
+</head>
+<body>
+    <!-- minute 22 in the video  -->
+    <div class="navbar" id="Home">
+        <div class="container">
+            <a href="pro1.html" class="logo">Mahmoud <span>Ramzy</span></a>
+            <!-- here we make logo as link to go to home page on click logo -->
+            <img id="menu-ID" class="Menu" src="Images/menu.png" alt="open Navigation bar">
+            <!-- this is the menu bar opining   -->
+            <nav>
+            <img id="close-menu-ID" class="close-menu" src="Images/Logout.png" alt="close Navigation bar">
+            <!-- this is the menu bar closing the opened bar   -->    
+                <ul class="primary-nav">
+                    <li class="Current"> <a href="#Home">Home</a></li>
+                    <li> <a href="#Feature">Features</a></li>
+                    <li> <a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li> <a href="#Contact">Contact</a></li>
+                    <li class="Go-Premium"> <a class="GOO" href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- We now finished the navigation bar and will go to the main page -->
+    <section class="main">
+        <div class="container">
+            <div class="left-column">
+                <p class="subhead">This is my first project</p>
+                <h1>Welcome to Mahmoud Ramzy's page</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primart-cta">Try it for free</a>
+                    <a href="https://www.youtube.com/channel/UCmhIWdTYHQY1ithSF1ghYJQ" class="watch-video-cta" target="_blank"><img src="../Images/icons8-video-50.png" alt="watch video">watch video here</a>
+                </div>
+            </div>
+            <div class="right-column">
+                <img src="Images/MR LOGO3.png" alt="My Logo" class="hero-img">
+            </div>
+        </div>
+    </section>
+    <!-- Main section is finished now lets go to the next section -->
+    <section class="second-section" id="Feature">
+        <div class="container">
+            <ul class="feature-lists">
+                <li>Unlimited tasks</li>
+                <li>Much fun</li>
+                <li>Social media announcement</li>
+                <li>All of this for free</li>
+                <li>And other awesome features</li>
+            </ul>
+            <img src="Images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+    <!-- here we finished the second section and will start the 3rd section -->
+    <section class="third-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="Images/1628872217982-01.jpeg" alt="Image">
+                    <blockquote>"Keep work on your target and focus on it and never give up , you can do it"</blockquote>
+                    <cite>- Mahmoud Ramzy</cite>
+                </li>
+                <li>
+                    <img src="Images/1633867672325-01.jpeg" alt="Image">
+                    <blockquote>"if you dream to do something trust me, you can do what you want 
+                    it only take effort and time and at last you will do it."</blockquote>
+                    <cite>- Mahmoud Ramzy</cite>
+                </li>
+                <li>
+                    <img src="Images/1637236759705.jpg" alt="Image">
+                    <blockquote>"studding and practicing is the key that open any door you want to go from "</blockquote>
+                    <cite>- Mahmoud Ramzy</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- here is the lst section: Contact section -->
+    <section class="contact-section" id="Contact">
+        <div class="container">
+        <div class="contact-left">
+        <h2>Contact</h2>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Example@exp" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"  required placeholder="Write your mesaage here"></textarea>
+            <input type="submit" class="send-message" value="Send Message">
+        </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1nn96wcV-vjE0UrTBZ6FW9i6Cef0&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+        </div>
+    </section>
+    <!-- Finally we finished HTML coding and now will transform this ugly shape to awesome shape b the magic of CSS so lets go -->
+
+<script>
+    const mobileButton=document.getElementById('menu-ID');
+        nav = document.querySelector('nav');
+        mobileButtonExit=document.getElementById('close-menu-ID');
+
+    mobileButton.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+    mobileButtonExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+
+</script>
+
+</body>
+</html>
